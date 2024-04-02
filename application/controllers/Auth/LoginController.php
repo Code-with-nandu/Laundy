@@ -55,6 +55,11 @@ class LoginController extends CI_Controller
                 $this->session->set_flashdata('status', 'Invalid Email ID or password');
                 redirect(base_url('login'));
             }
+          
+        }
+        public function git ()
+        {
+            
         }
 
     }
