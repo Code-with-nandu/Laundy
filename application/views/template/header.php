@@ -603,14 +603,7 @@
 			/* place-content: center; */
 		}
 
-		.background-div {
-			width: 100%;
-			height: 850px;
-			/* You can adjust the height as needed */
-			background: url("https://i.pinimg.com/564x/0e/58/17/0e5817b2f5a8e955103255569de24896.jpg") no-repeat center center;
-			background-size: cover;
-			/* This ensures the background image covers the entire div */
-		}
+	
 
 
 
