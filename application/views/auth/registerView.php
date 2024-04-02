@@ -14,7 +14,19 @@
         }
         
     </style>
-<h1 class="text-center" style="margin-top: 70px;" >Divine Laundry Service AOL BANGALORE</h1>
+ <style>
+   
+   .background-div {
+   width: 100%;
+   height: 850px; /* You can adjust the height as needed */
+   background: url("https://i.pinimg.com/564x/0e/58/17/0e5817b2f5a8e955103255569de24896.jpg") no-repeat center center;
+   background-size: cover; /* This ensures the background image covers the entire div */
+ }
+
+
+</style>
+<div class="background-div">
+   <h1 class="text-center" style="color:white; margin-top: 70px; " >Divine Laundry Service AOL BANGALORE</h1>
 <div class="py-5">
     <div class="container">
         <div class="row justify-content-center">

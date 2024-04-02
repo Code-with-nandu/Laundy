@@ -59,6 +59,10 @@ $route['register']['POST'] = 'Auth/RegisterController/register';
  //User Login 
  $route['login']['GET']='Auth/LoginController/index';
  $route['login']['POST']='Auth/LoginController/login';
-// user page 
+
+ //user and Admin route
  $route['userpage']['GET']='Auth/UserController/index';
  $route['adminpage']['GET']='Auth/AdminController/index';
+
+ //logout
+ $route['logout']['GET']='Auth/LogoutController/logout';

@@ -7,6 +7,13 @@ class RegisterController extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+  
+        if($this->session->has_userdata('authenticated'))
+        {
+            $this->session->set_flashdata('status','You are already logged in.!');
+            redirect(base_url('userpage'));
+        }
+
         $this->load->helper('form');
         $this->load->library('form_validation');
         $this->load->model('UserModel');

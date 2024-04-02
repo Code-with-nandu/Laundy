@@ -1,12 +1,12 @@
-<h1>This is Art Of living International center</h1>
 <?php if($this->session->flashdata('status')): ?>
                 <div class="alert alert-success">
                     <?= $this->session->flashdata('status') ?>
                 </div>
-	
+
+
             <?php endif;?>
 
-            <h1>Welcome to Art of living Internanal Center</h1>
+<h1>Welcome to Art of living Internanal Center</h1>
 This is Art Of living Internamnal center,
 <div class="py-5">
     <div class="container">
@@ -21,16 +21,28 @@ This is Art Of living Internamnal center,
                         <h5>User Page</h5>
                     </div>
                     <div class="card-body">
-                    <h6> You are in User User page </h6>
-                     
+                        <h6> You are in User User page </h6>
+                        <div class="card-header">
+                        <h5>User-page View Page</h5>
+                    </div>
+                    <div class="card-body">
+                     <h6> You are in User Home page </h6>
+                     <h5>First Name :<?= $this ->session->userdata('auth_user')['first_name']; ?></h5>
+                     <h5>Last Name : <?= $this ->session->userdata('auth_user')['last_name']; ?></h5>
+                     <h5>Last Name : <?= $this ->session->userdata('auth_user')['email']; ?></h5>
                     </div>
 
+
+                </div>
 
                     </div>
 
 
                 </div>
+
+
             </div>
         </div>
     </div>
+</div>
 </div>
