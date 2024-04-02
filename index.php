@@ -181,7 +181,7 @@ switch (ENVIRONMENT)
 
 
 // --------------------------------------------------------------------
-// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
+// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE (Jay gurudev)
 // --------------------------------------------------------------------
 
 /*
