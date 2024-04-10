@@ -1,3 +1,8 @@
+<?php date_default_timezone_set('Asia/Kolkata'); // LAUNDRY
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+header("Cache-Control: no-cache");
+header("Pragma: no-cache");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +11,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- //bootstapmin.css add -->
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>">
+
+
+
 	<title>Loundry</title>
 	<!-- <title><?= $data['title'] ?></title> -->
 	<meta charset="utf-8">
