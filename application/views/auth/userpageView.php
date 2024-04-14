@@ -132,6 +132,7 @@ h1{
     <hr>
   </div>
   <div class="row">
+    <!-- Show result after search -->
     <div id='searchresults'></div>
     <br>
     <div id='searchresultfp'></div>
@@ -180,4 +181,69 @@ h1{
   </div>
 
 
+<Script>
 
+$(document).ready(function(){
+
+function search() {
+    var uid = $.trim($("#uid").val());
+    var fname = $.trim($("#fname").val());
+    var lname = $.trim($("#lname").val());
+    var phone = $.trim($("#phone").val());
+
+    $("#searchresults").html('Searching ... Please wait ...');
+
+    var str = "uid=" + uid + "&fname=" + fname + "&lname=" + lname + "&phone=" + phone;
+
+    // Perform AJAX request
+    $.ajax({
+        url: '<?php echo base_url('UserController/search'); ?>', // URL to your search endpoint
+        type: 'POST',
+        data: str,
+        success: function(response) {
+            // Update the search results area
+            $('#searchresults').html(response);
+        },
+        error: function(xhr, status, error) {
+            console.error(error);
+        }
+    });
+}
+
+});
+</Script>
+
+  <!-- <script>
+  $(document).ready(function() {
+    // Add event listener for the search button
+    $('#search').click(function() {
+      // Get search parameters
+      var uid = $('#uid').val();
+      var fname = $('#fname').val();
+      var lname = $('#lname').val();
+      var phone = $('#phone').val();
+
+      // Perform AJAX request
+      $.ajax({
+        url: '<?php echo base_url('search/products'); ?>', // URL to your search endpoint
+        type: 'POST',
+        data: {
+          uid: uid,
+          fname: fname,
+          lname: lname,
+          phone: phone
+        },
+        success: function(response) {
+          // Update the search results area
+          $('#searchresults').html(response);
+        },
+        error: function(xhr, status, error) {
+          console.error(error);
+        }
+      });
+    });
+  });
+
+  // Define other functions such as clear, searchfp2, report, etc. as needed
+
+</script> -->
